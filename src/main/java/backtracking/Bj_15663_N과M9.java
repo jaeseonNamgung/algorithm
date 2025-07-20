@@ -5,10 +5,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-/*
-4 2
-9 7 9 1
- */
 public class Bj_15663_N과M9 {
 
   static StringBuffer sb = new StringBuffer();
