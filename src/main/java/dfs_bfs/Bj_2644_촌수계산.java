@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class Bj_2664_촌수계산 {
+public class Bj_2644_촌수계산 {
   static int a, b;
   static List<List<Integer>> graph;
   static boolean[] visited;
