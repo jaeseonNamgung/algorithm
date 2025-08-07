@@ -3,7 +3,7 @@ package dp;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+public class Bj_2193_이친수 {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     int n = sc.nextInt();
