@@ -1,4 +1,4 @@
-package 배열;
+package backtracking;
 
 import java.util.Scanner;
 
