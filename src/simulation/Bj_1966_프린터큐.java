@@ -32,7 +32,7 @@ public class Bj_1966_프린터큐 {
         int priority = Integer.parseInt(st.nextToken());
         Document document = new Document(j, priority);
         queue.add(document);
-        pq.add(priority);
+        pq.add(Integer.valueOf(priority));
       }
 
       int printOrder = 0;
