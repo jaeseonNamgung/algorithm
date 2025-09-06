@@ -30,17 +30,17 @@ public class BJ_사탕게임_2 {
     int ans = 0;
     for (int i = 0; i < N; i++) {
       for (int j = 0; j < N; j++) {
-        if(i+1 < N && !arr[i][j].equals(arr[i+1][j])) {
-          swapCandy(i, j, i+1, j);
+        if (i + 1 < N && !arr[i][j].equals(arr[i + 1][j])) {
+          swapCandy(i, j, i + 1, j);
           ans = Math.max(ans, Math.max(findColumn(j), findRow(i)));
-          ans = Math.max(ans, Math.max(findRow(i+1), ans));
-          swapCandy(i+1, j, i, j);
+          ans = Math.max(ans, Math.max(findRow(i + 1), ans));
+          swapCandy(i + 1, j, i, j);
         }
-        if(j+1 < N && !arr[i][j].equals(arr[i][j+1])) {
-          swapCandy(i, j, i, j+1);
+        if (j + 1 < N && !arr[i][j].equals(arr[i][j + 1])) {
+          swapCandy(i, j, i, j + 1);
           ans = Math.max(ans, Math.max(findColumn(j), findRow(i)));
-          ans = Math.max(ans, Math.max(findColumn(j+1), ans));
-          swapCandy(i, j+1, i, j);
+          ans = Math.max(ans, Math.max(findColumn(j + 1), ans));
+          swapCandy(i, j + 1, i, j);
         }
       }
     }
